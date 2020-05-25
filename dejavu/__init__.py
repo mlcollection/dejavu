@@ -71,6 +71,7 @@ class Dejavu(object):
         iterator = pool.imap_unordered(_fingerprint_worker,
                                        worker_input)
 
+        
         # Loop till we have all of them
         while True:
             try:
